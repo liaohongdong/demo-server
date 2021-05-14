@@ -2,8 +2,8 @@
  * @Author: hongdong.liao
  * @Date: 2021-01-15 15:46:36
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-01-18 11:40:04
- * @FilePath: /_serve/config/plugin.js
+ * @LastEditTime: 2021-05-13 15:34:40
+ * @FilePath: /demo-server/config/plugin.js
  */
 'use strict';
 
@@ -24,5 +24,9 @@ module.exports = {
   mysql: {
     enable: true,
     package: 'egg-mysql',
+  },
+  jwt: {
+    enable: true,
+    package: 'egg-jwt',
   },
 };

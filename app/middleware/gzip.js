@@ -1,9 +1,9 @@
 /*
  * @Author: hongdong.liao
- * @Date: 2021-01-15 18:12:50
+ * @Date: 2021-05-12 15:32:17
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-01-18 11:17:36
- * @FilePath: /_serve/app/middleware/gzip.js
+ * @LastEditTime: 2021-05-12 17:37:24
+ * @FilePath: /demo-server/app/middleware/gzip.js
  */
 'use strict';
 

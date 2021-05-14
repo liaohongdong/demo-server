@@ -2,8 +2,8 @@
  * @Author: hongdong.liao
  * @Date: 2021-01-15 15:46:36
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-01-18 11:43:45
- * @FilePath: /_serve/config/config.default.js
+ * @LastEditTime: 2021-05-13 15:39:19
+ * @FilePath: /demo-server/config/config.default.js
  */
 /* eslint valid-jsdoc: "off" */
 
@@ -25,7 +25,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1610696787796_254';
 
   // add your middleware config here
-  config.middleware = [ 'gzip' ];
+  config.middleware = [ 'gzip', 'notfoundHandler', 'errorHandler' ];
 
   config.cluster = {
     listen: {
@@ -46,6 +46,10 @@ module.exports = appInfo => {
   const userConfig = {
     secret: 'jwt_secret',
   };
+
+  config.jwt = {
+    secret: 'jwt_secret',
+  }
 
   config.gzip = {
     threshold: 1024,
