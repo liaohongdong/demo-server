@@ -2,8 +2,8 @@
  * @Author: hongdong.liao
  * @Date: 2021-01-18 09:42:34
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-05-13 16:24:02
- * @FilePath: /demo-server/app/service/users.js
+ * @LastEditTime: 2021-06-11 18:19:17
+ * @FilePath: /microDemo/demo-web/demo-server/app/service/users.js
  */
 'use strict';
 
@@ -36,11 +36,12 @@ class UsersService extends Service {
   }
 
   async findMenu() {
-    const menus = await this.app.mysql.select('micro_menu', {
+    let menus = await this.app.mysql.select('micro_menu', {
       where: {
         pid: 0,
       }
     });
+    console.log(menus);
     if (menus && menus.length > 0) {
       for (let i = 0; i < menus.length; i++) {
         const menu = menus[i];
