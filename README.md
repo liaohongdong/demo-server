@@ -2,7 +2,7 @@
  * @Author: hongdong.liao
  * @Date: 2021-05-12 15:32:17
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-06-11 17:58:24
+ * @LastEditTime: 2021-06-11 19:07:48
  * @FilePath: /microDemo/demo-web/demo-server/README.md
 -->
 # _serve
@@ -40,4 +40,4 @@ $ npm stop
 [egg]: https://eggjs.org
 
 ### 因为弱密码可能会被黑客删库所以在根目录提供一份sql脚本
-如果发现访问404了或者其他问题、拿着脚本去本地跑吧，emmmm，程序猿要有折腾精神。当然也可以在底下留言，看到了会及时回复的。
+如果发现访问404了或者其他问题、拿着脚本去本地跑吧，emmmm，程序猿要有折腾精神。当然也可以在底下留言，看到了会及时回复的。密码还是123456配置文件里面的密码会隐藏

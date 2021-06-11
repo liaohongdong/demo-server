@@ -2,8 +2,8 @@
  * @Author: hongdong.liao
  * @Date: 2021-01-15 15:46:36
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-05-13 15:39:19
- * @FilePath: /demo-server/config/config.default.js
+ * @LastEditTime: 2021-06-11 19:08:03
+ * @FilePath: /microDemo/demo-web/demo-server/config/config.default.js
  */
 /* eslint valid-jsdoc: "off" */
 
@@ -68,7 +68,7 @@ module.exports = appInfo => {
       host: '39.108.115.177',
       port: '3306',
       user: 'root',
-      password: '123456',
+      password: '******', // 123456
       database: 'micro',
     },
     app: true, // 是否加载到 app 上，默认开启
